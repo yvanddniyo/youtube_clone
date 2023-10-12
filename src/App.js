@@ -21,7 +21,7 @@ const App = () => (
       <Route  path="/search/:searchTerm" element={<SearchFeed />} /> 
     </Routes>
   </Box>
- </BrowserRouter>
+ </BrowserRouter> 
 );
 
 
