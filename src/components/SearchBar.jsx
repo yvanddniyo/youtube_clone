@@ -10,7 +10,7 @@ const SearchBar = () => {
   const navigate = useNavigate();
   
   const handleSubmit = (e) => { 
-    // e.preventDefault();
+    e.preventDefault();
 
   if(searchTerm){
      navigate(`/search/${searchTerm}`);
@@ -21,7 +21,7 @@ const SearchBar = () => {
 
   return (
     <Paper
-     component="from"
+     component="form"
      onSubmit={handleSubmit}
      sx={{
       borderRadius: 20, border: '1px solid #e3e3e3', pl:2, boxShadow: 'none', mr: { sm: 5 }
